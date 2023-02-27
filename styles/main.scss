@@ -69,6 +69,8 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 1.6rem;
+  margin-bottom: 4rem;
 }
 
 .section-container {
@@ -84,7 +86,6 @@ main {
 
 .bookmark {
   padding-top: 0;
-  position: absolute;
   text-align: center;
 
   img {
@@ -149,6 +150,64 @@ main {
     .bookmark-btn:hover {
       cursor: pointer;
       opacity: 0.8;
+    }
+  }
+}
+
+.stats {
+  .stats-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    p {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin: 0.4rem 0;
+    }
+  
+    span {
+      color: $Dark-gray;
+      font-size: 1.05rem;
+    }
+  
+    .divider {
+      border-right: 2px solid rgba(128, 128, 128, 0.25);
+    }
+  
+    .stats-nums {
+      padding-right: 1.8rem;
+    }
+  
+    div:nth-child(3),
+    div:nth-child(5) {
+      padding: 0 3.8rem 0 1.8rem;
+    }
+  }
+
+  .progress-bar {
+    margin-top: 2.4rem;
+    width: 100%;
+    height: 12px;
+    background-color: rgba(128, 128, 128, 0.18);
+    border-radius: 1rem;
+
+    div {
+      height: 100%;
+      width: 80%;
+      background-color: $Moderate-cyan;
+      border-radius: inherit;
+      animation: charge 5s;
+    }
+
+    @keyframes charge {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 80%;
+      }
     }
   }
 }
