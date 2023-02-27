@@ -11,6 +11,7 @@ body {
   padding: 0;
   font-family: "Commissioner", serif;
   font-size: 16px;
+  background-color: whitesmoke;
 }
 
 header {
@@ -59,6 +60,95 @@ header {
           text-decoration: underline;
         }
       }
+    }
+  }
+}
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-container {
+  box-sizing: border-box;
+  background-color: white;
+  padding: 3rem;
+  width: 100%;
+  max-width: 732px;
+  min-height: auto;
+  border-radius: 0.4rem;
+  border: 1px solid rgba(128, 128, 128, 0.15);
+}
+
+.bookmark {
+  padding-top: 0;
+  position: absolute;
+  text-align: center;
+
+  img {
+    position: relative;
+    top: -1.7rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-top: -0.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: $Dark-gray;
+    margin-top: -0.4rem;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+
+    button {
+      border: none;
+      font-family: "Commissioner", serif;
+      font-weight: 700;
+      border-radius: 2.2rem;
+      font-size: 1rem;
+    }
+
+    button:nth-child(1) {
+      width: 205px;
+      height: 56px;
+      color: white;
+      background-color: $Moderate-cyan;
+    }
+
+    button:nth-child(1):hover {
+      cursor: pointer;
+      background-color: $Dark-cyan;
+    }
+
+    .bookmark-btn {
+      width: 176px;
+      display: flex;
+      align-items: center;
+      gap: 1.05rem;
+      padding: 0;
+      color: $Dark-gray;
+
+      img {
+        display: flex;
+        align-self: flex-start;
+        position: static;
+        width: 56px;
+        height: 56px;
+      }
+    }
+
+    .bookmark-btn:hover {
+      cursor: pointer;
+      opacity: 0.8;
     }
   }
 }
