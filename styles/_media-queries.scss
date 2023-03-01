@@ -1,0 +1,30 @@
+@media (max-width: 830px) {
+  header {
+    padding: 2rem;
+
+    .logo {
+      margin: 0;
+    }
+  }
+
+  main {
+    width: auto;
+    padding: 0 2rem;
+  }
+
+  .bookmark {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    nav {
+      ul {
+        display: none;
+      }
+    }
+  }
+}
+
+
