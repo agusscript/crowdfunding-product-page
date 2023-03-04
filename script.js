@@ -1,4 +1,5 @@
 const menuButton = document.querySelector(".menu-btn");
+const bookmarkButton = document.querySelector(".bookmark-btn");
 
 function manageMobileMenu() {
   const openMenuIcon = document.querySelector(".open-menu");
@@ -12,4 +13,17 @@ function manageMobileMenu() {
   overLay.classList.toggle("show");
 }
 
+function manageBookmarkSectionState () {
+  const defaultBookmarkText = document.querySelector(".default-bookmark-text");
+  const activeBookmarkText = document.querySelector(".active-bookmark-text");
+  const svgBookmarkButton = document.querySelector(".svg-bookmark");
+
+  defaultBookmarkText.classList.toggle("occult");
+  activeBookmarkText.classList.toggle("show");
+  svgBookmarkButton.classList.toggle("occult");
+  svgBookmarkButton.querySelector("path").classList.toggle("path-active");
+  svgBookmarkButton.querySelector("circle").classList.toggle("circle-active");
+}
+
+bookmarkButton.onclick = manageBookmarkSectionState;
 menuButton.onclick = manageMobileMenu;

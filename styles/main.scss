@@ -169,19 +169,48 @@ main {
     }
 
     .bookmark-btn {
-      width: 176px;
+      width: 190px;
       display: flex;
       align-items: center;
       gap: 1.05rem;
       padding: 0;
       color: $Dark-gray;
 
-      img {
+      svg {
+        width: 56px;
+        height: 56px;
         display: flex;
         align-self: flex-start;
         position: static;
-        width: 56px;
-        height: 56px;
+
+        circle {
+          fill: #2f2f2f;
+        }
+
+        path {
+          fill: #b1b1b1;
+        }
+
+        .path-active {
+          fill: white;
+        }
+
+        .circle-active {
+          fill: $Dark-cyan;
+        }
+      }
+
+      .default-bookmark-text {
+        margin-left: 0.3rem;
+      }
+
+      .active-bookmark-text {
+        display: none;
+        color: $Dark-cyan;
+      }
+
+      .show {
+        display: block;
       }
     }
 
