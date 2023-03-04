@@ -5,6 +5,10 @@ $Dark-cyan: hsl(176, 72%, 28%);
 $Black: hsl(0, 0%, 0%);
 $Dark-gray: hsl(0, 0%, 48%);
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;

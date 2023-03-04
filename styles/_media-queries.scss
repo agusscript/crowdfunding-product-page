@@ -123,10 +123,11 @@
       .bookmark-btn {
         width: auto;
         gap: 0rem;
-        padding: 0;
-        color: transparent;
         font-size: 0px;
-        line-height: 0;
+
+        span {
+          display: none;
+        }
       }
     }
   }
