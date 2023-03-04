@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <div class="overlay"></div>
   <header>
     <picture>
       <source class="hero-desktop-img" srcset="images/image-hero-desktop.jpg" alt="desktop computer" media="(min-width: 700px)">
@@ -18,19 +19,25 @@
 
     <nav>
       <img class="logo" src="images/logo.svg" alt="logo icon">
-      <ul>
+      <ul class="nav-ul">
         <li>
           <a href="#">About</a>
         </li>
+        <div class="nav-divider"></div>
         <li>
           <a href="#">Discover</a>
         </li>
+        <div class="nav-divider"></div>
         <li>
           <a href="#">Get Started</a>
         </li>
       </ul>
     </nav>
 
+    <button class="menu-btn" aria-label="open menu">
+      <img class="open-menu" src="images/icon-hamburger.svg" alt="hamburger menu icon">
+      <img class="close-menu" src="images/icon-close-menu.svg" alt="close menu icon">
+    </button>
   </header>
 
   <main>
@@ -193,6 +200,7 @@
     <!-- Success modal end -->
   </main>
   <!-- <footer>yo</footer> -->
+  <script src="script.js"></script>
 </body>
 
 </html>
