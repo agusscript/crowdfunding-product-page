@@ -382,4 +382,46 @@ main {
   }
 }
 
+.modal {
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    margin-top: -1rem;
+  }
+
+  .reward-container {
+    position: relative;
+    padding-left: 4.5rem;
+
+    input {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      accent-color: $Dark-cyan;
+      left: 3.4%;
+      top: 20%;
+    }
+
+    p {
+      font-size: 0.92rem;
+    }
+
+    .header-modal {
+      div:nth-child(1) {
+        gap: 1.2rem;
+      }
+
+      div:nth-child(2) {
+        gap: 0.4rem;
+
+        span {
+          color: $Dark-gray;
+        }
+      }
+    }
+  }
+}
+
 @import "media-queries";
