@@ -146,66 +146,77 @@
     <!-- modal -->
 
     <section class="section-container about modal">
+      <svg>
+        <path
+          d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z"
+          fill-rule="evenodd" />
+      </svg>
       <h2>Back this project</h2>
       <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
 
       <div class="reward-container">
-        <input type="radio">
+        <input type="radio" class="no-reward-option" name="radio">
         <h3>Pledge with no reward</h3>
         <p>Choose to support us without a reward if you simply believe in our project. As a backer,
           you will be signed up to receive product updates via email.</p>
       </div>
 
-      <div class="reward-container">
-        <input type="radio">
+      <div class="reward-container bamboo-stand">
+        <input type="radio" class="bamboo-stand-option" name="radio">
         <div class="header-modal">
           <div>
             <h3>Bamboo Stand</h3>
             <span>Pledge $25 or more</span>
           </div>
           <div class="reward">
-            <h3>101</h3>
+            <h2>101</h2>
             <span class="left">left</span>
           </div>
         </div>
         <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
           you'll be added to a special Backer member list.</p>
+        <div class="pledge-container">
+          <p>Enter your pledge</p>
+          <div>
+            <input type="text" value="$25" placeholder="$">
+            <button>Continue</button>
+          </div>
+        </div>
       </div>
 
-      <!-- Enter your pledge
-    $25
-    Continue -->
-
-      <div class="reward-container">
-        <input type="radio">
-       <div class="header-modal">
-        <div>
-          <h3>Black Edition Stand</h3>
-          <span>Pledge $75 or more</span>
+      <div class="reward-container black-stand">
+        <input type="radio" class="black-stand-option" name="radio">
+        <div class="header-modal">
+          <div>
+            <h3>Black Edition Stand</h3>
+            <span>Pledge $75 or more</span>
+          </div>
+          <div>
+            <h2>64</h2>
+            <span class="left">left</span>
+          </div>
         </div>
-        <div>
-          <h3>64</h3>
-          <span class="left">left</span>
-        </div>
-       </div>
         <p>You get a Black Special Edition computer stand and a personal thank you. You'll be added to our Backer
           member list. Shipping is included.</p>
+          <div class="pledge-container">
+            <p>Enter your pledge</p>
+            <div>
+              <input type="text" value="$75" placeholder="$">
+              <button>Continue</button>
+            </div>
+          </div>
       </div>
-
-      <!-- Enter your pledge
-    $75
-    Continue -->
 
       <div class="reward-container out">
         <div class="overlay"></div>
-        <input type="radio">
+        <input type="radio" disabled>
         <div class="header-modal">
           <div>
             <h3>Mahogany Special Edition</h3>
             <span>Pledge $200 or more</span>
           </div>
           <div>
-            <h3>0</h3>
+            <h2>0</h2>
             <span class="left">left</span>
           </div>
         </div>
