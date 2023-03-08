@@ -497,6 +497,7 @@ main {
         height: 54px;
         color: white;
         background-color: $Moderate-cyan;
+        padding-bottom: 0.2rem;
       }
 
       button:hover {
@@ -514,6 +515,39 @@ main {
       left: 3.4%;
       top: 11.8%;
     }
+  }
+}
+
+.modal-success {
+  max-width: 520px;
+  text-align: center;
+  line-height: 1.7rem;
+
+  img {
+    width: 80px;
+  }
+
+  p {
+    color: $Dark-gray;
+  }
+
+  button {
+    margin-top: 1rem;
+    width: 110px;
+    height: 54px;
+    border: none;
+    font-family: "Commissioner", serif;
+    font-weight: 700;
+    border-radius: 2.6rem;
+    font-size: 1rem;
+    color: white;
+    background-color: $Moderate-cyan;
+    padding-bottom: 0.2rem;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: $Dark-cyan;
   }
 }
 
