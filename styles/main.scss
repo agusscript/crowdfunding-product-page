@@ -19,9 +19,9 @@ body {
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -548,9 +548,26 @@ main {
 }
 
 .modal-success {
+  position: fixed;
+  top: 50%;
+  left: 50%;
   max-width: 520px;
   text-align: center;
   line-height: 1.7rem;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+  animation: smoth 0.8s;
+
+  @keyframes smoth {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
   img {
     width: 80px;
@@ -578,6 +595,10 @@ main {
     cursor: pointer;
     background-color: $Dark-cyan;
   }
+}
+
+.modal-success-active {
+  display: block;
 }
 
 @import "media-queries";

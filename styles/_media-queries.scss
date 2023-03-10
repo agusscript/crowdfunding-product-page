@@ -225,7 +225,7 @@
 
   .modal {
     svg {
-      top: 2.5%;
+      top: 5%;
       right: 5%;
     }
 
@@ -290,6 +290,11 @@
 
 @media (max-width: 425px) {
   .modal {
+    svg {
+      top: 5%;
+      right: 5%;
+    }
+
     .reward-container {
       input[type="radio"] {
         left: 3.4%;
@@ -327,11 +332,6 @@
 
 @media (max-width: 380px) {
   .modal {
-    svg {
-      top: 1.5%;
-      right: 5%;
-    }
-
     .reward-container {
       .pledge-container {
         div {
