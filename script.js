@@ -92,6 +92,23 @@ function manageRadioButtonsModalState() {
   });
 }
 
+const backProjectButton = document.querySelector(".back-project-btn");
+const closeModalButton = document.querySelector(".close-modal-btn");
+
+backProjectButton.onclick = function() {
+  document.querySelector(".modal").classList.remove("occult-modal");
+  document.querySelector(".modal").classList.toggle("show-modal");
+  document.querySelector("body").style.overflow = "hidden";
+  document.querySelector(".overlay").classList.add("show");
+};
+
+closeModalButton.onclick = function() {
+  document.querySelector(".modal").classList.remove("show-modal");
+  document.querySelector(".modal").classList.add("occult-modal");
+  document.querySelector("body").style.overflow = "auto";
+  document.querySelector(".overlay").classList.remove("show");
+};
+
 bookmarkButton.onclick = manageBookmarkSectionState;
 menuButton.onclick = manageMobileMenu;
 manageRadioButtonsModalState();

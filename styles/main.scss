@@ -26,7 +26,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.8);
   animation: smoth 0.5s;
   display: none;
 }
@@ -383,7 +383,15 @@ main {
 }
 
 .modal {
-  position: relative;
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+  top: 0;
+  height: 100%;
+  overflow: auto;
+  top: -400%;
+  opacity: 0;
+  transition: all 0.4s;
 
   svg {
     position: absolute;
@@ -527,6 +535,16 @@ main {
     }
     transition: all 0.18s;
   }
+}
+
+.show-modal {
+  top: 0;
+  opacity: 1;
+}
+
+.occult-modal {
+  opacity: 0;
+  top: -400%;
 }
 
 .modal-success {

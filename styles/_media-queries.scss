@@ -94,7 +94,7 @@
     .active-pledge {
       input[type="radio"] {
         left: 3.4%;
-        top: 9%;
+        top: 5%;
       }
     }
   }
@@ -122,7 +122,8 @@
         border-radius: 0.6rem;
         z-index: 2;
         gap: 1.2rem;
-        opacity: 0;
+        transition: all 0.4s;
+        left: -400%;
 
         li {
           a {
@@ -140,8 +141,7 @@
       }
 
       .active-ul {
-        opacity: 1;
-        transition: all 0.6s;
+        left: 0;
       }
     }
 
@@ -224,10 +224,15 @@
   }
 
   .modal {
+    svg {
+      top: 2.5%;
+      right: 5%;
+    }
+
     .no-reward {
       input[type="radio"] {
         left: 3.4%;
-        top: 10%;
+        top: 9%;
       }
 
       .pledge-container {
@@ -274,12 +279,24 @@
 
     .active-pledge {
       padding: 1.5rem 1.5rem 10rem 1.5rem;
+
+      input[type="radio"] {
+        left: 3.4%;
+        top: 8%;
+      }
     }
   }
 }
 
 @media (max-width: 425px) {
   .modal {
+    .reward-container {
+      input[type="radio"] {
+        left: 3.4%;
+        top: 9%;
+      }
+    }
+
     .header-modal {
       flex-direction: column;
 
@@ -299,12 +316,22 @@
     }
     .active-pledge {
       padding: 1rem 1.5rem 12rem 1.5rem;
+
+      input[type="radio"] {
+        left: 3.4%;
+        top: 5%;
+      }
     }
   }
 }
 
 @media (max-width: 380px) {
   .modal {
+    svg {
+      top: 1.5%;
+      right: 5%;
+    }
+
     .reward-container {
       .pledge-container {
         div {
