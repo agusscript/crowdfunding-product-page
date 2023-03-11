@@ -94,35 +94,54 @@ function manageRadioButtonsModalState() {
   });
 }
 
-backProjectButton.onclick = function () {
+function openModal() {
   document.querySelector(".modal").classList.remove("occult-modal");
   document.querySelector(".modal").classList.toggle("show-modal");
   document.querySelector("body").style.overflow = "hidden";
   document.querySelector(".overlay").classList.add("show");
-};
+}
 
-closeModalButton.onclick = function () {
+function closeModal() {
   document.querySelector(".modal").classList.remove("show-modal");
   document.querySelector(".modal").classList.add("occult-modal");
   document.querySelector("body").style.overflow = "auto";
   document.querySelector(".overlay").classList.remove("show");
-};
+}
+
+function manageModalState() {
+  backProjectButton.onclick = openModal;
+  closeModalButton.onclick = closeModal;
+}
 
 function manageContinueButtons() {
-  const continueButtons = document.querySelectorAll(".continue-btn");
-  const modalSuccess = document.querySelector(".modal-success");
-  continueButtons.forEach(function (button) {
+  document.querySelectorAll(".continue-btn").forEach(function (button) {
     button.onclick = () => {
-      modalSuccess.classList.add("modal-success-active");
+      document
+        .querySelector(".modal-success")
+        .classList.add("modal-success-active");
       document.querySelector(".modal").classList.add("occult-modal");
     };
   });
 }
 
+function manageSelectRewardButtons() {
+  document.querySelectorAll(".select-btn").forEach(function (button, index) {
+    button.onclick = () => {
+      openModal();
+    };
+  });
+}
+
+function manageGotItButton() {
+  document.querySelector(".got-it-btn").onclick = function () {
+    location.reload();
+  };
+}
+
 bookmarkButton.onclick = manageBookmarkSectionState;
 menuButton.onclick = manageMobileMenu;
 manageRadioButtonsModalState();
+manageModalState();
 manageContinueButtons();
-document.querySelector(".got-it-btn").onclick = function () {
-  location.reload();
-};
+manageSelectRewardButtons();
+manageGotItButton();
