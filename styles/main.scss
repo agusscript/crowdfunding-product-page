@@ -362,7 +362,7 @@ main {
   .out {
     position: relative;
 
-    .overlay {
+    .overlay-out {
       position: absolute;
       width: 100%;
       height: 100%;
@@ -370,6 +370,10 @@ main {
       top: 0;
       right: 0;
       border-radius: inherit;
+    }
+
+    .occult {
+      display: none;
     }
 
     .reward {
@@ -479,7 +483,31 @@ main {
         font-size: 1.05rem;
       }
 
-      input[type="text"] {
+      label {
+        position: relative;
+      }
+      
+      label:before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 0;
+        bottom: 0;
+        width: 20px;
+        background: url("https://www.iconsdb.com/icons/preview/gray/us-dollar-xxl.png") center / contain no-repeat;
+      }
+
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input[type="number"] {
+        -moz-appearance: textfield;
+        appearance: none;
+      }
+
+      input[type="number"] {
         margin-right: 1rem;
         width: 94px;
         height: 50px;
@@ -490,7 +518,7 @@ main {
         color: $Black;
         letter-spacing: 0.03rem;
         text-align: center;
-        padding-right: 0.5rem;
+        padding-right: 0rem;
         outline: none;
       }
 
