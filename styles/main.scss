@@ -9,6 +9,23 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $Moderate-cyan;
+  border-radius: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $Dark-cyan;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -394,7 +411,6 @@ main {
   overflow: auto;
   top: 0;
   height: 100%;
-  overflow: auto;
   top: -400%;
   opacity: 0;
   transition: all 0.4s;
