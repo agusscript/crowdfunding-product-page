@@ -17,6 +17,14 @@ function manageMobileMenu() {
   closeMenuIcon.classList.toggle("show");
   openMenuIcon.classList.toggle("occult");
   overLay.classList.toggle("show");
+
+  manageNavOptions();
+}
+
+function manageNavOptions() {
+  document.querySelectorAll(".a-nav").forEach((a) => {
+    a.onclick = manageMobileMenu;
+  });
 }
 
 function manageBookmarkSectionState() {
