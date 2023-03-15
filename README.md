@@ -44,7 +44,7 @@ Users should be able to:
 ### Links
 
 - [Fron End Mentor solution](https://www.frontendmentor.io/solutions/-frontend-mentor-crowdfunding-product-page-solution-AijoOTCJTl)
-- [Live site](https://agusscript.github.io/Crowdfunding-product-page/)
+- [Live site](https://crowdfunding-product-page-theta-ten.vercel.app/)
 
 ## My process
 
