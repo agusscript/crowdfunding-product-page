@@ -76,4 +76,5 @@ Users should be able to:
 
 - Linkedin - [Agustin Emanuel Sanchez](https://www.linkedin.com/in/agustin-emanuel-sanchez-4b2807240/)
 - Frontend Mentor - [@agusscript](https://www.frontendmentor.io/profile/agusscript)
+- CodePen - [Agustin Sanchez](https://codepen.io/agusscript)
 - Twitter - [@agus_script](https://twitter.com/agus_script)
